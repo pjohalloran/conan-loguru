@@ -8,7 +8,7 @@ class LoguruConan(ConanFile):
    url = "https://github.com/pjohalloran/conan-loguru"
 
    def source(self):
-       self.run("https://github.com/emilk/loguru")
+       self.run("git clone https://github.com/emilk/loguru")
 
    def build(self):
        return
