@@ -11,14 +11,10 @@ class LoguruConan(ConanFile):
        self.run("https://github.com/emilk/loguru")
 
    def build(self):
-       #cmake = CMake(self.settings)
-       #self.run('cd hello && cmake . %s' % cmake.command_line)
-       #self.run("cd hello && cmake --build . %s" % cmake.build_config)
+       return
 
    def package(self):
        self.copy("loguru.hpp", dst="include", src="loguru")
-       #self.copy("*.lib", dst="lib", src="hello/lib")
-       #self.copy("*.a", dst="lib", src="hello/lib")
 
    def package_info(self):
-self.cpp_info.libs = ["loguru"]
+    self.cpp_info.libs = ["loguru"]
