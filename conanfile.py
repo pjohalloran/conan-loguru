@@ -21,3 +21,4 @@ class LoguruConan(ConanFile):
     self.cpp_info.sharedlinkflags = ["-std=c++11"]
     self.cpp_info.exelinkflags = ["-std=c++11"]
     self.cpp_info.libs = ["stdc++", "pthread", "dl"]
+    self.cpp_info.cppflags = ["-std=c++11", "-stdlib=libc++"]
