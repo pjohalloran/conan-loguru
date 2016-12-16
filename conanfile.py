@@ -17,4 +17,6 @@ class LoguruConan(ConanFile):
        self.copy("loguru.hpp", dst="include", src="loguru")
 
    def package_info(self):
-    self.cpp_info.libs = ["loguru"]
+    self.cpp_info.sharedlinkflags = ["-std=c++11"]
+    self.cpp_info.exelinkflags = ["-std=c++11"]
+    self.cpp_info.libs = ["stdc++", "pthread", "dl"]
