@@ -2,7 +2,8 @@ from conans import ConanFile, CMake
    
 class LoguruConan(ConanFile):
    name = "loguru"
-   version = "0.1"
+   version = "1.0"
+   description = "A lightweight C++ logging library"
    license="MIT"
    settings = "os", "compiler", "build_type", "arch"
    url = "https://github.com/pjohalloran/conan-loguru"
